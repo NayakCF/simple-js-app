@@ -15,3 +15,11 @@
     color:black;
     border:2px solid blue
 }
+
+#preloader {
+    background: #000 url(/img/preloader.gif) no-repeat center;
+    height: 00vh;
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+}

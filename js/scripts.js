@@ -61,7 +61,7 @@ let pokemonRepository = (function () {
     }
   
     function showDetails(item) {
-      pokemonRepository.loadDetails(item).then(function () {
+            pokemonRepository.loadDetails(item).then(function () {
         console.log(item);
       });
     }
@@ -76,6 +76,11 @@ let pokemonRepository = (function () {
     };
   })();
   
+    let loader=document.getElementById("preloader");
+    window.addEventListener("load",function(){
+      loader.style.display = "none";
+    })
+
   //calling the function here 
   pokemonRepository.loadList().then(function () {
     pokemonRepository.getAll().forEach(function (pokemon) {
