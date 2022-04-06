@@ -1,7 +1,7 @@
 //Start of IIFE
 let pokemonRepository = (function () {
   let pokemonList = [];
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=25';
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=24';
 
 //add new pokemon to pokemonList
 function add(pokemon) {
